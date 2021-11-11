@@ -1,0 +1,67 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="Barcode.BarcodeScanner.controller.Home"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<App>
+		<pages>
+			<Page title="Home">
+				<content>
+					<GenericTile header="Transfer posting from plant to plant" frameType="OneByOne" class="sapUiSmallMargin"
+						press="_onGenericTilePress">
+						<tileContent>
+							<TileContent footer="" unit="">
+								<content/>
+							</TileContent>
+						</tileContent>
+					</GenericTile>
+					<GenericTile header="Put away Process" frameType="OneByOne" class="sapUiSmallMargin"
+						press="onPutawayProcess">
+						<tileContent>
+							<TileContent footer="" unit="">
+								<content/>
+							</TileContent>
+						</tileContent>
+					</GenericTile>
+					<GenericTile header="Cutting process" frameType="OneByOne" class="sapUiSmallMargin"
+						press="onCuttingProcess">
+						<tileContent>
+							<TileContent footer="" unit="">
+								<content/>
+							</TileContent>
+						</tileContent>
+					</GenericTile>
+					<GenericTile header="Packing slip" frameType="OneByOne" class="sapUiSmallMargin"
+						press="onPackingSlip">
+						<tileContent>
+							<TileContent footer="" unit="">
+								<content/>
+							</TileContent>
+						</tileContent>
+					</GenericTile>
+					<GenericTile header="Bin to Bin transfer" frameType="OneByOne" class="sapUiSmallMargin"
+						press="onBintoBintransfer">
+						<tileContent>
+							<TileContent footer="" unit="">
+								<content/>
+							</TileContent>
+						</tileContent>
+					</GenericTile>
+					<GenericTile header="Physical Inventory" frameType="OneByOne" class="sapUiSmallMargin"
+						press="onPhysicalInventory">
+						<tileContent>
+							<TileContent footer="" unit="">
+								<content/>
+							</TileContent>
+						</tileContent>
+					</GenericTile>
+					<GenericTile header="GR process in Trading Warehouse" frameType="OneByOne" class="sapUiSmallMargin"
+						press="onGRProcess">
+						<tileContent>
+							<TileContent footer="" unit="">
+								<content/>
+							</TileContent>
+						</tileContent>
+					</GenericTile>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

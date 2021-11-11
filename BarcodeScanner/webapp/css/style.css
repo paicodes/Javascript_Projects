@@ -1,0 +1,43 @@
+/* Enter your custom styles here */
+
+@media print {
+    /*@media print {*/
+    /*    @page :footer {*/
+    /*        color: #fff*/
+    /*    }*/
+    /*    @page :header {*/
+    /*        color: #fff*/
+    /*    }*/
+    /*}*/
+    /*}*/
+    /* define print page default settings */
+    @page {
+        size: portrait;
+        margin: 1.5cm 1cm;
+    }
+    /* scale content to fit print page */
+    html,
+    body {
+        width: 100% !important;
+        height: auto !important;
+    }
+    /* reset body */
+    body {
+        margin: 0;
+        padding: 0;
+        float: none;
+        color: #000;
+    }
+    /* helper class to allow selective hiding elements from printing (ex print button)  */
+    .uoNoPrint {
+        display: none;
+    }
+    /* fix overflow scrolling */
+    * {
+        overflow-x: visible !important;
+        overflow-y: visible !important;
+    }
+}
+
+
+/* custom css prototypes for addtional used containers */

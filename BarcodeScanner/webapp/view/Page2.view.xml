@@ -1,0 +1,48 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="Barcode.BarcodeScanner.controller.Page2"
+	xmlns:html="http://www.w3.org/1999/xhtml" xmlns:f="sap.ui.layout.form"
+	xmlns:data="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" busyIndicatorDelay="0">
+	<App>
+		<pages>
+			<Page title="Print BarCode Details" class="sapUiResponsiveContentPadding">
+				<content>
+					<f:SimpleForm minWidth="1024" editable="false" layout="ResponsiveGridLayout" labelSpanL="3" labelSpanM="3" emptySpanL="4" emptySpanM="4"
+						columnsL="1" columnsM="1">
+						<f:content>
+							<Label text="{i18n>Material Number}" design="Bold"/>
+							<!--<Text text="{rModel>/0/Result}"/>-->
+							<Text text="{rModel>/0/Matnumb}"/>
+							<Label text="Batch Number" design="Bold"/>
+							<Text text="{rModel>/1/Batch}"/>
+							<Label text="Quantity" design="Bold"/>
+							<Text text="{rModel>/2/Qty}"/>
+							
+							<Label text="Src Plant" design="Bold"/>
+							<Text text="{rModel>/4/Scr}"/>
+							
+							<Label text="Store Loc1" design="Bold"/>
+							<Text text="{rModel>/5/Storloc1}"/>
+							
+							<Label text="Dest Plant" design="Bold"/>
+							<Text text="{rModel>/6/Dest}"/>
+							
+							<Label text="Store Loc2" design="Bold"/>
+							<Text text="{rModel>/7/Storloc2}"/>
+
+							<Label></Label>
+							<!--<Label text="{i18n>Format}"/>-->
+							<!--<Text text="{rModel>/1/Format}"/>-->
+							<!--<Button press="onPrint" text="Save as PDF" icon="sap-icon://pdf-attachmenticon" width="150px"/>-->
+							<!--<Button id="print" press="onPrint" text="Print" icon="sap-icon://print" width = "150px"/>-->
+						</f:content>
+					</f:SimpleForm>
+				</content>
+				<footer>
+					<Toolbar>
+						<ToolbarSpacer/>
+						<Button id = "print" press="onPrint" text="Print" icon="sap-icon://print" type="Emphasized"/>
+					</Toolbar>
+				</footer>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

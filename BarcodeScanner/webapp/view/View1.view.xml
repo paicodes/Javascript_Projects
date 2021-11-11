@@ -1,0 +1,33 @@
+<mvc:View controllerName="Barcode.BarcodeScanner.controller.View1" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m"
+	xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form" xmlns:core="sap.ui.core">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+						<VBox class="sapUiSmallMargin">
+							<f:SimpleForm editable="true" layout="ResponsiveGridLayout" id="SimpleForm" columnsM="2" columnsL="3" columnsXL="4">
+								<f:content id="FormContent">
+									<!--<core:Title text=""/>-->
+									<Label text="Click to Scan Barcode" id="Labe" design="Bold"/>
+									<Button icon="sap-icon://bar-code" press="onPress" text="Scan" width="150px"/>
+									<Label></Label>
+									<!--<core:Title text=""/>-->
+									<Label text="Src Plant" id="Label1" design="Bold"/>
+									<Input width="25%" id="Input4" value="8250" enabled="true"/>
+									<Label text="Store Loc" id="Labe12" design="Bold"/>
+									<Input width="25%" id="Input5" value="8301" enabled="true"/>
+									<Label text="Dest Plant" id="Label3" design="Bold"/>
+									<Input width="25%" id="Input6" value="8200" enabled="true"/>
+									<Label text="Store Loc" id="Labe14" design="Bold"/>
+									<Input width="25%" id="Input7" value="8301" enabled="true"/>
+									
+								</f:content>
+							</f:SimpleForm>
+						</VBox>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
